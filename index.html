@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        ROCK PAPER SCISSORS ARENA
+    </header>
+    <div class="main">
+        <div class="starting_buttons_container">
+            <button id='new_game' class="button new_game">New Game</button>
+        </div>
+        <p style='padding:2px;cursor:pointer'id="make_wars_visible">Wars Own ↓</p>
+        <div class="score_games" id="score_games">
+            <div class="container player">
+                <img class="players" src="images/player.png">
+                <p id="player_score">0</p>
+            </div>
+            <div class="container computer">
+                <img class="players" src="images/computer.png">
+                <p id="computer_score">0</p>
+            </div>
+        </div>
+        <p>Choose your weapon!</p>
+        <div class="options">
+            <img id='weapon' class='0'src="images/rock.png" alt="Rock">
+            <img id='weapon' class='1'src="images/paper.png" alt="Paper">
+            <img id='weapon' class='2'src="images/scissors.png" alt="Scissors">
+        </div>
+        
+        <p>Outcome of the last attack</p>
+        <div class="figth">
+            <img id='player_weapon' src="images/rock.png" alt="Rock">
+            <p>vs</p>
+            <img id='computer_weapon' src="images/paper.png" alt="Paper">
+        </div>
+        <p>Battle</p>
+        <div class="score_games_battle">
+            <div class="container_battle player">
+                <img class="players" src="images/player.png">
+                <p id="player_score_battle">0</p>
+            </div>
+            <div class="container_battle computer">
+                <p id="computer_score_battle">0</p>
+                <img class="players" src="images/computer.png">
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <footer>
+        <a ref="https://github.com/RdrigoE">Rodrigo Eusébio</a>
+    </footer>
+</body>
+</html>
