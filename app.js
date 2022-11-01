@@ -68,6 +68,7 @@ function battleReset () {
   scoreComputer.innerHTML = 0
   const scorePlayer = document.getElementById('player_score_battle')
   scorePlayer.innerHTML = 0
+  emptyBattle()
   return {
     player: 0,
     computer: 0
@@ -79,10 +80,16 @@ function gameReset () {
   scoreComputer.innerHTML = 0
   const scorePlayer = document.getElementById('player_score')
   scorePlayer.innerHTML = 0
+  emptyBattle()
   return {
     player: 0,
     computer: 0
   }
+}
+
+function emptyBattle () {
+  changeComputerImg('./images/nothing.png')
+  changePlayerImg('./images/nothing.png')
 }
 
 let game = {
